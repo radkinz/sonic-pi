@@ -1,4 +1,4 @@
-use_bpm 110
+use_bpm 120
 
 #initialize drum beat array
 # 1 = base, 2 = clap, 3 = open hat
@@ -29,10 +29,10 @@ end
 
 live_loop :melody do
   #spread creates an array of true/false values in a distributed relatively even way
-  use_synth :chiplead
+  use_synth :dsaw
   use_random_seed 3397
-  16.times do
-    play scale(:c3, :major).choose, amp: 0.5, release: 0.5 if spread(11, 16).tick
+  32.times do
+    play scale(:c3, :minor_pentatonic).choose, amp: 0.25, release: 0.5 if spread(11, 16).tick
     sleep 0.25
   end
 end
