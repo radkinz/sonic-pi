@@ -1,4 +1,4 @@
-use_bpm 120
+use_bpm 150
 
 #initialize drum beat array
 # 1 = base, 2 = clap, 3 = open hat
